@@ -17,7 +17,7 @@ O:
 P: Position of player in the list
 Q: Boolean if player is currently rendering / has to be
 R: Boolean if world is currently rendering / has to be
-S: *Reserved for coming story, see interpretation below*
+S: *Reserved for coming story*
 T: Current tile
 U:
 V: Previous player X position
@@ -32,7 +32,7 @@ Z: Player height level
 3: Floor 3
 4: Floor 4
 5: *Reserved for NPC positions*
-6: *Reserved*
+6: *Reserved for story progress*
 7: *Reserved*
 8: *Reserved*
 9: *Reserved*
@@ -43,9 +43,11 @@ Z: Player height level
 1..: Blocks
 
 ### Variable interpretation
-#### S
-To be seen as a binary value, i.e. 001100101100. 1 bit = Story completed, 0 bit = Story uncompleted.
+
 
 ### List interpretation
 #### List 5
 Every odd value is the X-position of an NPC, every even position stands for each Y-position.
+
+#### List 6
+Each entry stands for the progress of the story, i.e. {59, 100, 0} 59% in the first story, 100% in the second story and 0% in the last story.
