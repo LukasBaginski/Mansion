@@ -1,5 +1,5 @@
 ## Variables:
-A:
+A: *Reserved for NPC variable cache*
 B: Beginning of current chunk
 C: Chunk limit X
 D: Chunk limit Y
