@@ -3,9 +3,9 @@ A:
 B: Beginning of current chunk
 C: Chunk limit X
 D: Chunk limit Y
-E:
-F:
-G:
+E: *Reserved for iterating through the NPCs*
+F: *Reserved for storing the NPCs X*
+G: *Reserved for storing the NPCs Y*
 H: Player height level limit
 I: *Reserved for loops*
 J: *Reserved for loops*
