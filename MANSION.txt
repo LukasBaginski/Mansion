@@ -24,10 +24,12 @@ Then Break
 IfEnd
 
 If K=78
-Then
-
-For 1->E To 2
-MOD() TODO: Calculate positions of npcs to get id (id=MOD(E,2))
+Then For 1->E To 2
+MOD(E,2)->A
+List 5[A]->F
+A+1->A
+List 5[A]->G
+Locate F,G,"X"
 Next
 
 IfEnd
@@ -90,11 +92,11 @@ P-MOD(P,147)->B
 For 1->I To 7
 ""->Str 8
 For 1->J To 21
-(I-1)*(21*E)+J->L
+(I-1)*(21*C)+J->L
 L+B->L
 List Z[L]->M
 M=0=>Str 8+" "->Str 8
-M=1=>Str 8+"_#E6A6_"->Str 8
+M=1=>Str 8+"o"->Str 8
 Next
 I=1=>Str 8->Str 1
 I=2=>Str 8->Str 2
