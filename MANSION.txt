@@ -23,6 +23,15 @@ If K=47
 Then Break
 IfEnd
 
+If K=78
+Then
+
+For 1->E To 2
+MOD() TODO: Calculate positions of npcs to get id (id=MOD(E,2))
+Next
+
+IfEnd
+
 If K=27
 Then 1->Q
 X+1->X
